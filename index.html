@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="navbar-container">
+                <ul class="navbar__list layout-2-columns">
+                    <li class="list-left">
+                        <ul class="navbar__links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Booking</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-right">
+                        <ul class="navbar__links">
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section intro">
+            <div class="wrapper">
+                <div class="intro__lines"></div>
+                <div class="intro__header layout-3-columns">
+                    <div class="header__working-hours">
+                        <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+                    </div>
+                    <div class="header__main-title">
+                        <div class="subtitle-container">
+                            <h4 class="subtitle">Restaurant</h4>
+                        </div>
+                        <div class="main-title__main-header">
+                            <h1 class="header">Hungry People</h1>
+                        </div>
+                        <div class="main-title__buttons">
+                            <button class="button button_colored">Book table</button>
+                            <button class="button">Explore</button>
+                        </div>
+                    </div>
+                    <div class="header__socials socials">
+
+                    </div>
+                </div>
+                <div class="arrow-button">
+                    <span class="arrow-down"></span>
+                </div>
+            </div>
+        </section>
+        <section class="section about-us">
+            <div class="wrapper">
+                <div class="layout-2-columns">
+                    <div class="about-us__description description">
+                        <h2 class="section-header">About us</h2>
+                        <div class="header-divider"></div>
+                        <h3 class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                        <p class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                    </div>
+                    <div class="img-block">
+                        <div class="img-container">
+                            <img src="/src/assets/img/section-images/about-us.png" alt="" class="section-img">
+                        </div>
+                        <div class="frame"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section our-team">
+            <div class="wrapper">
+                <div class="subtitle-container">
+                    <h4 class="subtitle">Our Team</h4>
+                </div>
+                <div class="layout-2-columns">
+                    <div class="img-block">
+                        <div class="img-container">
+                            <img src="/src/assets/img/section-images/about-us.png" alt="" class="section-img">
+                        </div>
+                        <div class="frame"></div>
+                    </div>
+                    <div class="about-us__description description">
+                        <h2 class="section-header">Master Chef</h2>
+                        <div class="header-divider"></div>
+                        <h3 class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                        <p class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section book-a-table">
+            <div class="wrapper">
+                <div class="layout-2-columns">
+                    <div class="book-a-table__book-form form-section">
+                        <h2 class="section-header">Book a table</h2>
+                        <form action="post" class="book-form form">
+                            <div class="row">
+                                <input type="text" class="input" name="Name" placeholder="Name" required>
+                                <input type="email" class="input" name="Email" placeholder="Email" required>
+                            </div>
+                            <div class="row">
+                                <input type="tel" class="input" placeholder="Phone" required>
+                                <select name="People" class="input" required>
+                                    <option value="People" selected disabled>People</option>
+                                    <option value="1" class="option">1</option>
+                                    <option value="2" class="option">2</option>
+                                    <option value="3" class="option">3</option>
+                                    <option value="4" class="option">4</option>
+                                    <option value="5" class="option">5</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <input type="date" class="input date-input" name="Date" required>
+                                <input type="time" class="input time-input" name="Time" required>
+                            </div>
+                            <button type="submit" class="button button_colored button-submit">Book Now</button>
+                        </form>
+                    </div>
+                    <div class="img-block">
+                        <div class="img-container">
+                            <img src="/src/assets/img/section-images/about-us.png" alt="" class="section-img">
+                        </div>
+                        <div class="frame"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section specialties">
+            <div class="wrapper">
+                <div class="subtitle-container">
+                    <h4 class="subtitle">Specialties</h4>
+                </div>
+                <div class="specialties__carousel carousel">
+                    <div class="carousel-slides specialties-slides">
+                        <div class="carousel-slide specialties-slide">
+                            <div class="layout-2-columns">
+                                <div class="img-block">
+                                    <div class="img-container">
+                                        <img src="/src/assets/img/section-images/about-us.png" alt="" class="section-img">
+                                    </div>
+                                    <div class="frame"></div>
+                                </div>
+                                <div class="specialties-us__description description">
+                                    <h2 class="section-header">Chocolate Pancakes</h2>
+                                    <div class="header-divider"></div>
+                                    <h3 class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                                    <p class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls specialties-controls">
+                        <div class="controls-container specialties-controls-container">
+                            <button class="control specialties-control"></button>
+                            <button class="control specialties-control"></button>
+                            <button class="control specialties-control"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section menu">
+            <div class="wrapper">
+                <div class="about-us__description description">
+                    <h2 class="section-header">Delicious menu</h2>
+                    <div class="header-divider"></div>
+                    <h3 class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                </div>
+                <div class="menu__nav-container">
+                    <ul class="menu__nav">
+                        <li>Pizza</li>
+                        <li>Soup</li>
+                        <li>Pasta</li>
+                        <li>Desert</li>
+                        <li>Wine</li>
+                        <li>Beer</li>
+                        <li>Drinks</li>
+                    </ul>
+                </div>
+                <div class="menu__table layout-3-columns">
+                    <div class="table__cell layout-2-columns">
+                        <div class="cell__name">
+                            <h5 class="cell__title">PIZZA QUATRO STAGIONI</h5>
+                            <p class="cell__subtitle">Integer ullamcorper neque eu purus euismo</p>
+                        </div>
+                        <div class="cell__price">
+                            <p>55,68 USD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section private-events">
+            <div class="wrapper">
+                <div class="subtitle-container">
+                    <h4 class="subtitle">Private Events</h4>
+                </div>
+                <div class="layout-2-columns private-events__layout">
+                    <div class="private-events__event">
+                        <div class="img-block">
+                            <div class="img-container">
+                                <img src="/src/assets/img/section-images/about-us.png" alt="" class="section-img">
+                            </div>
+                            <div class="frame"></div>
+                            <div class="event__name"><p>Weddings</p></div>
+                        </div>
+                    </div>
+                    <div class="private-events__event">
+                        <div class="img-block">
+                            <div class="img-container">
+                                <img src="/src/assets/img/section-images/about-us.png" alt="" class="section-img">
+                            </div>
+                            <div class="frame"></div>
+                            <div class="event__name"><p>Corporate parties</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="private-events__events-contacts">
+                    <h6 class="events-contacts__contact">For private events please call: <span class="events-contacts__number">+40 729 131 637/+40 726 458 782</span> or use the contact form.</h6>
+                </div>
+            </div>
+        </section>
+        <section class="section gallery">
+            <div class="wrapper">
+                <div class="gallery__carousel carousel">
+                    <div class="carousel-slides gallery-slides">
+                        <div class="slide gallery-slide">
+                            <div class="layout-4-columns">
+                                <img src="/src/assets/img/section-images/about-us.png" alt="" class="gallery-img">
+                                <img src="/src/assets/img/section-images/about-us.png" alt="" class="gallery-img">
+                                <img src="/src/assets/img/section-images/about-us.png" alt="" class="gallery-img">
+                                <img src="/src/assets/img/section-images/about-us.png" alt="" class="gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls gallery-controls">
+                        <div class="controls-container gallery-controls-container">
+                            <button class="control gallery-control"></button>
+                            <button class="control gallery-control"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section contact">
+            <div class="wrapper">
+                <div class="contact__contact-form form-section">
+                    <h2 class="section-header">Contact</h2>
+                    <form action="post" class="contact-form form">
+                        <div class="row">
+                            <div class="layout-3-columns">
+                                <input type="text" class="input" name="Name" placeholder="Name" required>
+                                <input type="email" class="input" name="Email" placeholder="Email" required>
+                                <input type="tel" class="input" placeholder="Phone" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <textarea name="Message" id=""></textarea>
+                        </div>
+                        <div class="layout-2-columns">
+                            <div class="contact__contacts contacts">
+                                <div class="layout-3-columns">
+                                    <div class="contacts__item">
+                                        <div class="contacts-ico ico-location"></div>
+                                        <div class="contacts-text">5th London Boulevard, U.K.</div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts-ico ico-phone"></div>
+                                        <div class="contacts-text">+40 729 131 637/+40 726 458 782</div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts-ico ico-mail"></div>
+                                        <div class="contacts-text">foobar@supermail.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="button button_colored button-submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.4902804052804!2d-0.24356588478379015!3d51.595904679649784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876112b847e1733%3A0x5459509257c80ef1!2zQm91bGV2YXJkIERyLCBFZGd3YXJlLCBMb25kb24sINCS0LXQu9C40LrQvtCx0YDQuNGC0LDQvdC40Y8!5e0!3m2!1sru!2sby!4v1600711921976!5m2!1sru!2sby" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+            
+    </footer>
+</body>
+</html>
