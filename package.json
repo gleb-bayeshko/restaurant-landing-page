@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gleb-bayeshko/restaurant-landing-page/issues"
   },
-  "homepage": "https://github.com/gleb-bayeshko/restaurant-landing-page#readme"
+  "homepage": "https://github.com/gleb-bayeshko/restaurant-landing-page#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
