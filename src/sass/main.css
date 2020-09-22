@@ -18,6 +18,10 @@
   border: 1px solid #33333380;
 }
 
+.section-text, .section-subheader, h2 {
+  text-align: center;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -422,6 +426,7 @@ button {
   font-family: "Open Sans", sans-serif;
   text-transform: none;
   color: #000000;
+  margin: 15px 0;
 }
 
 .section-text {
@@ -437,6 +442,7 @@ button {
   height: 5px;
   border-radius: 50px;
   background-color: #E8C300;
+  margin: 15px 0 0;
 }
 
 .frame {
@@ -446,14 +452,15 @@ button {
   border: 20px solid #E8C300;
   filter: drop-shadow(0px 0px 100px #000000);
   border-radius: 5px;
+  right: 0;
 }
 
-.logo-svg:hover {
+.logo-svg:hover, .logo-svg:active {
   background-color: #E8C300;
   box-shadow: 0 0 20px #000000;
   animation: wheelRotation 2s infinite forwards linear;
 }
-.logo-svg:hover path {
+.logo-svg:hover path, .logo-svg:active path {
   fill: #ffffff;
 }
 
@@ -471,6 +478,15 @@ button {
 .img-block {
   position: relative;
   display: flex;
+  width: 100%;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.section-img {
+  max-width: 500px;
 }
 
 .button {
@@ -492,7 +508,7 @@ button {
   background-color: #E8C300;
 }
 .button_colored:hover {
-  background-color: #ffe044;
+  background-color: #ecc649;
 }
 
 .socials {
@@ -559,6 +575,33 @@ button {
   width: 100%;
 }
 
+.layout-2-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.layout-2-columns > * {
+  flex-basis: 42%;
+}
+
+.section-layout .layout-2-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.section-layout .layout-2-columns > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.layout-2-columns .img-block {
+  flex-basis: 50%;
+}
+
 .layout-3-columns {
   display: flex;
   justify-content: space-between;
@@ -567,6 +610,15 @@ button {
 }
 .layout-3-columns > * {
   flex-basis: 30%;
+}
+
+.section-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 nav {
@@ -657,7 +709,7 @@ nav {
   color: #ffffff;
 }
 .header__main-title .main-title__main-header {
-  margin: 10px 0 15px;
+  margin: 10px 0 0;
 }
 
 .header__socials {
@@ -665,7 +717,7 @@ nav {
 }
 
 .main-title__buttons {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .main-title__buttons button:last-child {
   margin-left: 40px;

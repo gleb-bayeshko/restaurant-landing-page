@@ -40,7 +40,7 @@
     }
 
     & .main-title__main-header {
-        margin: 10px 0 15px
+        margin: 10px 0 0;
     }
 }
 
@@ -49,7 +49,7 @@
 }
 
 .main-title__buttons {
-    margin-top: 40px;
+    margin-top: 25px;
 
     & button:last-child {
         margin-left: 40px;

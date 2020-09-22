@@ -7,7 +7,7 @@
         }
     }
 
-    &-svg:hover {
+    &-svg:hover, &-svg:active {
         background-color: $color-primary;
         box-shadow: 0 0 20px $color-dark;
         animation: wheelRotation 2s infinite forwards linear;

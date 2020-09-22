@@ -13,6 +13,7 @@ h1 {
 
 h2 {
     @include font($size: 3.6rem, $family: $font-title, $case: uppercase);
+    @extend %text-center;
 }
 
 h4 {
@@ -26,8 +27,11 @@ button {
 
 .section-subheader {
     @include font($size: 1.8rem, $weight: bold);
+    @extend %text-center;
+    margin: 15px 0;
 }
 
 .section-text {
     @include font($size: 1.4rem);
+    @extend %text-center;
 }
