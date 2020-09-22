@@ -1,0 +1,23 @@
+.button {
+    @include size ($width: 200px, $height: 60px);
+    background-color: transparent;
+    border: 1px solid $color-button-border;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    @extend %transition;
+
+    &:hover {
+        background-color: $color-light;
+        color: $color-dark;
+    }
+}
+
+.button_colored {
+    border: none;
+    background-color: $color-primary;
+
+    &:hover {
+        background-color: $color-button-colored-hovered;
+    }
+}

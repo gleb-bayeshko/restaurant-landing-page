@@ -1,0 +1,23 @@
+.arrow-button {
+    @include flex($justify: center, $align: center);
+
+    &__container {
+        cursor: pointer;
+        background-color: $color-light;
+
+        @include size ($width: 60px, $height: 60px);
+        @include flex($justify: center, $align: center);
+
+        @extend %rounding;
+        @extend %border-ico;
+        @extend %transition;
+
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+
+    &__svg path {
+        width: 100%;
+    }
+}

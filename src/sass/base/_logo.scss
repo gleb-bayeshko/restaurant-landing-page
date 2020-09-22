@@ -1,5 +1,24 @@
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo {
+    &-svg {
+        @extend %transition;
+        @extend %rounding;
+        & path {
+            @extend %transition;
+        }
+    }
+
+    &-svg:hover {
+        background-color: $color-primary;
+        box-shadow: 0 0 20px $color-dark;
+        animation: wheelRotation 2s infinite forwards linear;
+        & path {
+            fill: $color-light;
+        }
+    }
+}
+
+@keyframes wheelRotation {
+    100% {
+        transform: rotate(360deg);
+    }
 }

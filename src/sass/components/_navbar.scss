@@ -8,12 +8,28 @@ nav {
     align-items: flex-start;
 }
 
+.list-column {
+   padding: 40px 0;
+}
+
 .navbar__links {
     display: flex;
-    justify-content: space-between;
     list-style: none;
+
     & li a {
         text-decoration: none;
         color: $color-light;
+        font-weight: bold;
+        padding: 30px 20px;
+        @extend %transition;
+        &:hover {
+            color: $color-primary;
+            background-color: $color-add-transp;
+        }
     }
+}
+
+.navbar__logo {
+    margin-top: 10px;
+    @include flex ($justify: center);
 }
