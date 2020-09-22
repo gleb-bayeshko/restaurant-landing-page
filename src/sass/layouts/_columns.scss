@@ -1,0 +1,7 @@
+.layout-3-columns {
+    display: flex;
+    justify-content: space-between;
+    & > * {
+        flex-basis: 30%;
+    }
+}

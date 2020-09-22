@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/sass/main.css">
     <title>Restaurant</title>
 </head>
 <body>
     <header>
-        <div class="wrapper">
-            <div class="navbar-container">
-                <ul class="navbar__list layout-2-columns">
-                    <li class="list-left">
-                        <ul class="navbar__links">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Booking</a></li>
-                        </ul>
-                    </li>
-                    <li class="list-right">
-                        <ul class="navbar__links">
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+            <nav class="navbar">
+                <div class="wrapper">
+                    <ul class="navbar__list layout-3-columns">
+                        <li class="list-left">
+                            <ul class="navbar__links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Booking</a></li>
+                            </ul>
+                        </li>
+                        <li class="logo">
+                            <div class="logo-container">
+                                <img src="src/assets/img/logo/logo.svg" alt="logo" class="logo">
+                            </div>
+                        </li>
+                        <li class="list-right">
+                            <ul class="navbar__links">
+                                <li><a href="#">Menu</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
@@ -75,7 +82,7 @@
                     <div class="about-us__description description">
                         <h2 class="section-header">About us</h2>
                         <div class="header-divider"></div>
-                        <h3 class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                        <p class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
                         <p class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
                     </div>
                     <div class="img-block">
@@ -102,7 +109,7 @@
                     <div class="about-us__description description">
                         <h2 class="section-header">Master Chef</h2>
                         <div class="header-divider"></div>
-                        <h3 class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                        <p class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
                         <p class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
                     </div>
                 </div>
@@ -166,7 +173,7 @@
                                 <div class="specialties-us__description description">
                                     <h2 class="section-header">Chocolate Pancakes</h2>
                                     <div class="header-divider"></div>
-                                    <h3 class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                                    <p class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
                                     <p class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
                                 </div>
                             </div>
@@ -187,7 +194,7 @@
                 <div class="about-us__description description">
                     <h2 class="section-header">Delicious menu</h2>
                     <div class="header-divider"></div>
-                    <h3 class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                    <p class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
                 </div>
                 <div class="menu__nav-container">
                     <ul class="menu__nav">

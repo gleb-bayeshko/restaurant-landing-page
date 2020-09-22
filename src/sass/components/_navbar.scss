@@ -1,0 +1,19 @@
+nav {
+    position: absolute;
+    width: 100%;
+}
+
+.navbar__list {
+    list-style: none;
+    align-items: flex-start;
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    & li a {
+        text-decoration: none;
+        color: $color-light;
+    }
+}

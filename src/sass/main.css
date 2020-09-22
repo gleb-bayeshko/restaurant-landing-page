@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@font-face {
+  font-family: "Banny Bold Round";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Banny Bold Round"), url("../assets/fonts/Banny/Banny-BoldRound.woff") format("woff");
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,7 +12,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -338,11 +344,135 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "Banny Bold Round";
-  font-style: normal;
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  font-size: 1.2rem;
   font-weight: normal;
-  src: local("Banny Bold Round"), url("../../assets/fonts/Banny/Banny-BoldRound.otf") format("otf");
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+h1 {
+  font-size: 9.6rem;
+  font-weight: normal;
+  font-family: "Banny Bold Round", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: normal;
+  font-family: "Banny Bold Round", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 4px;
+}
+
+button {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.section-subheader {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  text-transform: none;
+  color: #000000;
+}
+
+.section-text {
+  font-size: 1.4rem;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  text-transform: none;
+  color: #000000;
+}
+
+.header-divider {
+  width: 60px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #E8C300;
+}
+
+.frame {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 20px solid #E8C300;
+  filter: drop-shadow(0px 0px 100px #000000);
+  border-radius: 5px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.layout-3-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.layout-3-columns > * {
+  flex-basis: 30%;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+}
+
+.navbar__list {
+  list-style: none;
+  align-items: flex-start;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.navbar__links li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.intro {
+  background: url("../assets/img/backgrounds/header-bg.png") no-repeat center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
