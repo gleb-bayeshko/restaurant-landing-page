@@ -1,0 +1,20 @@
+.book-a-table__book-form {
+    flex-basis: 47%;
+}
+
+.book-form {
+    width: 100%;
+}
+
+.row > * {
+    flex-basis: 49%;
+    margin-bottom: 10px;
+}
+
+.section-layout .columns-row > * {
+    flex-direction: row;
+}
+
+.button-submit {
+    width: 100%;
+}

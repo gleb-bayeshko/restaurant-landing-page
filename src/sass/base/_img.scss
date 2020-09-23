@@ -6,8 +6,10 @@
 
 .img-container {
     width: 100%;
+    @include flex($justify: flex-start);
 }
 
 .section-img {
+    width: 100%;
     max-width: 500px;
 }

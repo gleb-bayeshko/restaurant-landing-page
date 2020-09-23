@@ -1,0 +1,32 @@
+.menu__nav-container {
+    @include flex ($justify: center, $align: center, $direction: row);
+}
+
+.menu__nav {
+    @include flex ($justify: center, $align: center, $direction: row);
+    list-style: none;
+    flex-wrap: wrap;
+
+    & > li {
+        @include font ($size:18px, $weight: bold, $family: $font-text, $case: uppercase, $color: $color-add);
+        @extend %text-center;
+        @extend %transition;
+        padding: 20px 20px;
+        cursor: pointer;
+        position: relative;
+        width: 120px;
+
+        &:not(:first-child) {
+            border-left: 1px solid $color-add-extra-transp;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-dark;
+        }
+
+        &:hover:not(:first-child) {
+            border-left: 1px solid transparent;
+        }
+    }
+}

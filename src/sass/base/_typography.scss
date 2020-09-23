@@ -28,10 +28,12 @@ button {
 .section-subheader {
     @include font($size: 1.8rem, $weight: bold);
     @extend %text-center;
-    margin: 15px 0;
+    line-height: 28px;
+    margin: 0 0 15px;
 }
 
 .section-text {
     @include font($size: 1.4rem);
     @extend %text-center;
+    line-height: 24px;
 }

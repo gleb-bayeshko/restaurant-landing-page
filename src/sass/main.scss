@@ -13,10 +13,18 @@
 @import "base/button";
 @import "base/socials";
 @import "base/arrow-button";
+@import "base/input";
+@import "base/input-date";
+@import "base/input-select";
 
 @import "layouts/2-columns";
 @import "layouts/3-columns";
 @import "layouts/section-layout";
+@import "layouts/section-alter-layout";
 
 @import "components/navbar";
 @import "components/intro";
+@import "components/our-team";
+@import "components/specialties";
+@import "components/book-a-table";
+@import "components/menu";

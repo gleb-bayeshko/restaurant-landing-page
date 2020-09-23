@@ -1,4 +1,5 @@
 .layout-3-columns {
+    width: 100%;
     @include flex ($justify: space-between);
     & > * {
         flex-basis: 30%;
