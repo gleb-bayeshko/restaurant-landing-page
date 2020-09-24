@@ -9,10 +9,23 @@
     &__img {
         @extend %transition;
         position: relative;
-        min-width: 1%;
-        max-width: 100%;
+        width: 100%;
         cursor: pointer;
         box-shadow: inset 0px 0px 5px 8px rgba(235, 29, 235, 1);
+    }
+}
+
+.gallery-layout {
+    flex-wrap: wrap;
+    > * {
+        @include media-tablet-small {
+            flex-basis: 50%;
+            flex-wrap: wrap;
+        }
+        @include media-mobile {
+            flex-basis: 100%;
+            flex-wrap: wrap;
+        }
     }
 }
 

@@ -1,5 +1,8 @@
 .book-a-table__book-form {
     flex-basis: 47%;
+    @include media-tablet-small {
+        width: 100%;
+    }
 }
 
 .book-form {
@@ -17,4 +20,16 @@
 
 .button-submit {
     width: 100%;
+}
+
+.book-a-table__img-block {
+    @include media-tablet-small {
+        display: none;
+    }
+}
+
+.columns-row {
+    @include media-mobile {
+        flex-direction: column;
+    }
 }

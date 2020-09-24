@@ -21,3 +21,16 @@
 %color-light {
     color: $color-light;
 }
+
+%burger-line {
+    display: inline-block;
+    position: absolute;
+    background-color: $color-primary;
+    width: 100%;
+    height: 3px;
+}
+
+%pseudo-absolute {
+    content: "";
+    position: absolute;
+}

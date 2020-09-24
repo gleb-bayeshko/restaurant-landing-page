@@ -15,4 +15,11 @@
     & > * {
         @include flex($justify: center, $align: center, $direction: column);
     }
+    &_reversed {
+        flex-direction: row-reverse;
+    }
+
+    @include media-tablet-small {
+        flex-direction: column;
+    }
 }

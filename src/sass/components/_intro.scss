@@ -1,36 +1,56 @@
 .intro {
-    @include bg-img($url: '../assets/img/backgrounds/header-bg.png');
+    @include bg-img($url: "../assets/img/backgrounds/header-bg.png");
     @extend %text-center;
     min-height: 700px;
     padding-top: 160px;
 
+    @include media-tablet-small {
+        padding-top: 50px;
+    }
+
     &__header {
         margin: 50px 0 0;
+        @include media-tablet-small {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__hours {
-        @include flex ($justify: flex-end);
+        @include flex($justify: flex-end);
         flex-basis: 5%;
-        @include vertical-rotate ($deg: 180deg);
+        @include vertical-rotate($deg: 180deg);
 
         & p {
             display: flex;
             align-items: flex-end;
-            @include flex ($align: flex-end);
+            @include flex($align: flex-end);
             font-weight: bold;
             font-size: 1.2rem;
+        }
+
+        @include media-tablet-small {
+            writing-mode: horizontal-tb;
+            transform: none;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 15px;
         }
     }
 
     &__arrow-button {
         margin: 100px 0 0;
         padding-bottom: 10px;
+
+        @include media-tablet-small {
+            margin: 30px 0 0;
+        }
     }
 }
 
 .header__main-title {
     flex-basis: 85%;
-    @include flex ($align: center, $direction: column);
+    @include flex($align: center, $direction: column);
 
     & .main-title__main-header {
         margin: 10px 0 0;
@@ -40,12 +60,51 @@
 .main-title__buttons {
     margin-top: 25px;
 
-    & button:last-child {
-        margin-left: 40px;
+    & button {
+        @include media-tablet-small {
+            width: 100%;
+        }
+
+        &:last-child {
+            margin-left: 40px;
+
+            @include media-tablet-small {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    @include media-tablet-small {
+        @include flex($justify: center, $align: center, $direction: column);
+        width: 100%;
+    }
+}
+
+.header {
+    @include media-tablet-small {
+        font-size: 7.3rem;
+    }
+
+    @include media-mobile-small {
+        font-size: 5.6rem;
     }
 }
 
 .header__socials {
     flex-basis: 5%;
     flex-direction: column;
+
+    @include media-tablet-small {
+        @include flex($justify: center);
+        margin-top: 25px;
+        width: 100%;
+    }
+}
+
+.socials-list {
+    @include media-tablet-small {
+        @include flex($justify: space-between);
+        flex-basis: 220px;
+    }
 }

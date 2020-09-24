@@ -10,6 +10,10 @@
     @extend %border-radius;
     right: -12%;
     z-index: 20;
+
+    @include media-tablet-small {
+        border-width: 10px;
+    }
 }
 
 .frame_left {

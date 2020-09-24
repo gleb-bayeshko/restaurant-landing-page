@@ -1,17 +1,35 @@
-.under-contacts-layout > * {
-    flex-basis: 50%;
-    align-items: center;
+.under-contacts-layout {
+    @include media-mobile {
+        flex-direction: column-reverse;
+    }
+
+    & > * {
+        flex-basis: 50%;
+        align-items: center;
+
+        @include media-mobile {
+            flex-basis: initial;
+        }
+    }
 }
 
 .contact {
     padding-bottom: 0;
     &__under-contacts {
         padding-right: 5px;
+
+        @include media-tablet-small {
+            flex-direction: column;
+            margin-top: 15px;
+        }
     }
 
     &__item {
         @include flex($direction: row);
         height: 100%;
+        @include media-tablet-small {
+            margin-bottom: 10px;
+        }
     }
 
     &-text {
@@ -23,15 +41,28 @@
         margin-right: 6px;
         &_location {
             @include size($width: 11px, $height: 15px);
-            @include bg-img($url: '../assets/icons/contacts/location.svg');
+            @include bg-img($url: "../assets/icons/contacts/location.svg");
         }
         &_phone {
             @include size($width: 14px, $height: 13px);
-            @include bg-img($url: '../assets/icons/contacts/phone.svg');
+            @include bg-img($url: "../assets/icons/contacts/phone.svg");
         }
         &_mail {
             @include size($width: 15px, $height: 15px);
-            @include bg-img($url: '../assets/icons/contacts/mail.svg');
+            @include bg-img($url: "../assets/icons/contacts/mail.svg");
+        }
+    }
+}
+
+.contact-layout {
+    @include media-mobile {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    > * {
+        @include media-mobile {
+            margin-bottom: 10px;
         }
     }
 }

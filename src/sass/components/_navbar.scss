@@ -6,6 +6,13 @@ nav {
 .navbar__list {
     list-style: none;
     align-items: flex-start;
+    justify-content: space-between;
+
+    .list-column {
+        @include media-tablet {
+            display: none;
+        }
+    }
 }
 
 .list-column {
@@ -30,6 +37,18 @@ nav {
 }
 
 .navbar__logo {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 75px);
     margin-top: 10px;
-    @include flex ($justify: center);
+    @include media-tablet-small {
+        left: calc(50% - 35px);
+    };
+
+    .logo-svg {
+        @include media-tablet-small {
+            @include size(70px, 70px);
+        };
+    }
 }

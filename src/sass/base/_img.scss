@@ -3,6 +3,14 @@
     display: flex;
     width: 100%;
     padding: 50px;
+
+    @include media-tablet-small {
+        width: 95%;
+    }
+
+    @include media-mobile {
+        padding: 20px;
+    }
 }
 
 .img-container {
