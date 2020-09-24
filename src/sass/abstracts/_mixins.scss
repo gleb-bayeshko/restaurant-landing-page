@@ -22,3 +22,8 @@
     align-items: $align;
     flex-direction: $direction;
 }
+
+@mixin vertical-rotate ($deg: 180deg) {
+    writing-mode: vertical-lr;
+    transform: rotate($deg);
+}

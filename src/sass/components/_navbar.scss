@@ -17,11 +17,11 @@ nav {
     list-style: none;
 
     & li a {
+        @extend %transition;
         text-decoration: none;
         color: $color-light;
         font-weight: bold;
         padding: 30px 20px;
-        @extend %transition;
         &:hover {
             color: $color-primary;
             background-color: $color-add-transp;

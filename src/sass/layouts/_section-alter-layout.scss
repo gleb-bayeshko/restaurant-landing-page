@@ -3,12 +3,4 @@
     & h2, .section-subheader, .section-header, .section-text, .subtitle {
         @extend %color-light;
     }
-
-    & .section-layout .img-container {
-        justify-content: flex-end;
-    }
-
-    & .frame {
-        left: 0;
-    }
 }

@@ -1,0 +1,18 @@
+.gallery {
+    padding: 0;
+
+    &__wrapper {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    &__img {
+        @extend %transition;
+        position: relative;
+        min-width: 1%;
+        max-width: 100%;
+        cursor: pointer;
+        box-shadow: inset 0px 0px 5px 8px rgba(235, 29, 235, 1);
+    }
+}
+

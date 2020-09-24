@@ -1,0 +1,8 @@
+.subtitle-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    & .subtitle {
+        color: $color-light;
+    }
+}

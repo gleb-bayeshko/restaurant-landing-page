@@ -1,29 +1,30 @@
 .intro {
     @include bg-img($url: '../assets/img/backgrounds/header-bg.png');
+    @extend %text-center;
     min-height: 700px;
-    text-align: center;
     padding-top: 160px;
-}
 
-.intro__header {
-    margin: 50px 0 0;
-}
+    &__header {
+        margin: 50px 0 0;
+    }
 
-.working-hours {
-    display: flex;
-    justify-content: flex-end;
-    @include flex ($justify: flex-end);
-    flex-basis: 5%;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    color: $color-light;
+    &__hours {
+        @include flex ($justify: flex-end);
+        flex-basis: 5%;
+        @include vertical-rotate ($deg: 180deg);
 
-    & p {
-        display: flex;
-        align-items: flex-end;
-        @include flex ($align: flex-end);
-        font-weight: bold;
-        font-size: 1.2rem;
+        & p {
+            display: flex;
+            align-items: flex-end;
+            @include flex ($align: flex-end);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__arrow-button {
+        margin: 100px 0 0;
+        padding-bottom: 10px;
     }
 }
 
@@ -31,22 +32,9 @@
     flex-basis: 85%;
     @include flex ($align: center, $direction: column);
 
-    & .subtitle-container {
-        display: flex;
-        justify-content: center;
-        align-content: flex-end;
-        & .subtitle {
-            color: $color-light;
-        }
-    }
-
     & .main-title__main-header {
         margin: 10px 0 0;
     }
-}
-
-.header__socials {
-    flex-basis: 5%;
 }
 
 .main-title__buttons {
@@ -58,10 +46,6 @@
 }
 
 .header__socials {
+    flex-basis: 5%;
     flex-direction: column;
-}
-
-.intro__arrow-button {
-    margin: 100px 0 0;
-    padding-bottom: 10px;
 }

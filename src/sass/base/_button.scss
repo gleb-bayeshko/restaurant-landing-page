@@ -1,11 +1,11 @@
 .button {
     @include size ($width: 200px, $height: 60px);
+    @extend %border-radius;
+    @extend %transition;
     background-color: transparent;
     border: 1px solid $color-button-border;
-    @extend %border-radius;
     font-weight: bold;
     cursor: pointer;
-    @extend %transition;
 
     &:hover {
         background-color: $color-light;

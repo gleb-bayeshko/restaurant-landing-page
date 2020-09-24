@@ -22,11 +22,43 @@
 
         &:hover {
             background-color: $color-primary;
-            color: $color-dark;
+            color: $color-light;
         }
 
         &:hover:not(:first-child) {
             border-left: 1px solid transparent;
         }
+    }
+}
+
+.menu__table {
+    margin: 50px 0 0;
+}
+
+.cell {
+    & > * {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__name {
+        position: relative;
+        overflow: hidden;
+        flex-basis: 70%;
+    }
+
+    &__title,
+    &__price {
+        @include font ($size: 18px, $weight: normal, $family: $font-title, $case: uppercase, $color: $color-add);
+    }
+
+    &__subtitle {
+        color: $color-add-transp;
+    }
+
+    &__price {
+        text-align: end;
+        flex-basis: 30%;
+        color: $color-add;
     }
 }

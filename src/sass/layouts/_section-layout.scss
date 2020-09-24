@@ -1,3 +1,7 @@
+section {
+    padding: 50px 0;
+}
+
 .section-layout {
     @include flex ($justify: center, $align: center, $direction: column);
     padding-top: 50px;
@@ -5,5 +9,5 @@
 }
 
 .description {
-    @include flex($align: center, $direction: column)
+    @include flex($align: center, $direction: column);
 }

@@ -1,18 +1,18 @@
 .layout-2-columns {
     width: 100%;
-    @include flex ($justify: space-between);
+    @include flex($justify: space-between);
     & > * {
         flex-basis: 42%;
     }
 
-    & .img-block {
+    & .section-img-block {
         flex-basis: 50%;
     }
 }
 
-.section-layout .layout-2-columns {
-    @include flex ($justify: space-between, $align: center);
+.block-layout {
+    @include flex($justify: space-between, $align: center);
     & > * {
-        @include flex ($justify: center, $align: center, $direction: column);
+        @include flex($justify: center, $align: center, $direction: column);
     }
 }

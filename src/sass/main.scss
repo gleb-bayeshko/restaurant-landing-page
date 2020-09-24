@@ -10,15 +10,19 @@
 @import "base/logo";
 @import "base/wrapper";
 @import "base/img";
+@import "base/working-hous";
 @import "base/button";
 @import "base/socials";
 @import "base/arrow-button";
 @import "base/input";
 @import "base/input-date";
 @import "base/input-select";
+@import "base/input-textarea";
+@import "base/subtitle";
 
 @import "layouts/2-columns";
 @import "layouts/3-columns";
+@import "layouts/4-columns";
 @import "layouts/section-layout";
 @import "layouts/section-alter-layout";
 
@@ -28,3 +32,7 @@
 @import "components/specialties";
 @import "components/book-a-table";
 @import "components/menu";
+@import "components/private-events";
+@import "components/gallery";
+@import "components/contact";
+@import "components/footer";

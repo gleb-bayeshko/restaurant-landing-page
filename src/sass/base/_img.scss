@@ -2,14 +2,20 @@
     position: relative;
     display: flex;
     width: 100%;
+    padding: 50px;
 }
 
 .img-container {
+    position: relative;
     width: 100%;
-    @include flex($justify: flex-start);
+    @include flex($justify: flex-start, $align: center);
+}
+
+.img-container_right {
+    justify-content: flex-end;
 }
 
 .section-img {
     width: 100%;
-    max-width: 500px;
+    box-shadow: 0 0 10px $color-dark-transp;
 }
