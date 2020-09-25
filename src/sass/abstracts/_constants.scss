@@ -3,6 +3,8 @@ $color-primary: #E8C300;
 
 $color-input-background: #e5e5e5;
 $color-footer-background: #000000e6;
+$color-nav-mobile-background: #111111;
+$color-overlay: #0c0a00c2;
 
 $color-button-border:#ffffff80;
 $color-button-hovered: #ffffff80;
@@ -15,6 +17,7 @@ $color-dark-transp: #00000080;
 
 $color-add: #333333;
 $color-add-transp: #33333380;
+$color-add-little-transp: #333333c7;
 $color-add-extra-transp: #33333320;
 
 $color-facebook: #1c3ba0;
@@ -25,6 +28,8 @@ $color-instagram: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1
 $font-title: 'Banny Bold Round', sans-serif;
 $font-text: 'Open Sans', sans-serif;
 
+// Metrics
+$wrapper-padding: 20px;
 
 // Screens
 $width-laptop: 1200px;

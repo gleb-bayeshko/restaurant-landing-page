@@ -1,10 +1,9 @@
 .burger-menu {
+    @include size ($width: 30px, $height: 24px);
+    @extend %cursor-pointer;
     display: none;
-    margin: 15px 0 0;
     position: relative;
-    width: 30px;
-    height: 24px;
-    cursor: pointer;
+    z-index: 650;
 
     &__line {
         @extend %burger-line;
@@ -34,11 +33,11 @@
 .burger-menu_active {
 
     &:before {
-        transform: translateY(10.6px) rotate(-45deg);
+        transform: translateY(10.6px) rotate(-315deg);
     }
 
     &:after {
-        transform: translateY(-10.6px) rotate(45deg);
+        transform: translateY(-10.6px) rotate(315deg);
     }
 
     & .burger-menu__line {

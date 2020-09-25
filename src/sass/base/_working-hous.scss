@@ -3,8 +3,6 @@
     color: $color-light;
 
     & p {
-        display: flex;
-        align-items: flex-end;
         @include flex ($align: flex-end);
         font-weight: bold;
         font-size: 1.2rem;

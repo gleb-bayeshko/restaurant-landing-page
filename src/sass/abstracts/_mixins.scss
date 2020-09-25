@@ -28,6 +28,11 @@
     transform: rotate($deg);
 }
 
+@mixin color-and-bgc ($color: transparent, $bgc: transparent) {
+    color: $color;
+    background-color: $bgc;
+}
+
 // Media-queries
 
 @mixin media-laptop {

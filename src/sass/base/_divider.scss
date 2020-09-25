@@ -1,6 +1,5 @@
 .header-divider {
-    width: 60px;
-    height: 5px;
+    @include size ($width: 60px, $height: 5px);
     border-radius: 50px;
     background-color: $color-primary;
     margin: 20px 0;

@@ -29,7 +29,7 @@
 }
 
 .columns-row {
-    @include media-mobile {
+    @include media-tablet {
         flex-direction: column;
     }
 }

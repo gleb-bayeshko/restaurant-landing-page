@@ -4,15 +4,15 @@
 
 .menu__nav {
     @include flex ($justify: center, $align: center, $direction: row);
-    list-style: none;
+    @extend %list-style-none;
     flex-wrap: wrap;
 
     & > li {
         @include font ($size:18px, $weight: bold, $family: $font-text, $case: uppercase, $color: $color-add);
         @extend %text-center;
         @extend %transition;
+        @extend %cursor-pointer;
         padding: 20px 20px;
-        cursor: pointer;
         position: relative;
         width: 120px;
 

@@ -1,8 +1,7 @@
 
 .frame {
     position: absolute;
-    width: 54%;
-    height: 54%;
+    @include size ($width: 54%, $height: 54%);
     max-width: 250px;
     max-height: 250px;
     border: 20px solid $color-primary;

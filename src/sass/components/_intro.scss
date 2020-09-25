@@ -4,8 +4,8 @@
     min-height: 700px;
     padding-top: 160px;
 
-    @include media-tablet-small {
-        padding-top: 50px;
+    @include media-tablet {
+        padding-top: 20px;
     }
 
     &__header {
@@ -29,12 +29,17 @@
             font-size: 1.2rem;
         }
 
+        @include media-tablet {
+            padding-left: 45px;
+        }
+
         @include media-tablet-small {
             writing-mode: horizontal-tb;
             transform: none;
             width: 100%;
             justify-content: center;
             margin-bottom: 15px;
+            padding-left: 0;
         }
     }
 

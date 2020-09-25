@@ -10,7 +10,7 @@
         @extend %transition;
         position: relative;
         width: 100%;
-        cursor: pointer;
+        @extend %cursor-pointer;
         box-shadow: inset 0px 0px 5px 8px rgba(235, 29, 235, 1);
     }
 }

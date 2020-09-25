@@ -1,0 +1,19 @@
+.overlay {
+    @extend %transition;
+    visibility: hidden;
+    opacity: 0;
+    @include media-tablet {
+        @include size($width: 100%, $height: 100%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: $color-overlay;
+        z-index: 500;
+    }
+}
+
+.overlay_active {
+    @extend %transition;
+    visibility: visible;
+    opacity: 1;
+}

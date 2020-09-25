@@ -68,12 +68,10 @@
 }
 
 .contact__map {
-    width: 100%;
+    @include size($width: 100%, $height: 400px);
     margin-top: 50px;
-    height: 400px;
 }
 
 .google-map {
-    height: 100%;
-    width: 100%;
+    @include size($width: 100%, $height: 100%);
 }
