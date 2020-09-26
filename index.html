@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/vendors/Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="src/sass/main.css">
     <title>Restaurant</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-top">
+        <nav class="navbar-top">
             <div class="wrapper">
                 <div class="overlay"></div>
                 <div class="burger-menu nav__burger-menu">
@@ -170,11 +171,11 @@
                         <h2 class="section-header">Book a table</h2>
                         <div class="header-divider"></div>
                         <form action="post" class="book-form form">
-                            <div class="row layout-2-columns columns-row">
+                            <div class="row-input layout-2-columns columns-row">
                                 <input type="text" class="input" name="Name" placeholder="Name" required>
                                 <input type="email" class="input" name="Email" placeholder="Email" required>
                             </div>
-                            <div class="row layout-2-columns columns-row">
+                            <div class="row-input layout-2-columns columns-row">
                                 <input type="tel" class="input" placeholder="Phone" required>
                                 <select name="People" class="input select-input" required>
                                     <option value="0" class="option" selected disabled>People</option>
@@ -185,7 +186,7 @@
                                     <option value="5" class="option">5</option>
                                 </select>
                             </div>
-                            <div class="row layout-2-columns columns-row">
+                            <div class="row-input layout-2-columns columns-row">
                                 <input type="date" class="input date-input" name="Date" required>
                                 <input type="time" class="input time-input" name="Time" required>
                             </div>
@@ -206,35 +207,87 @@
                 <div class="subtitle-container">
                     <h4 class="subtitle">Specialties</h4>
                 </div>
-                <div class="specialties__carousel carousel">
-                    <div class="carousel-slides specialties__slides">
-                        <div class="carousel-slide specialties__slide">
-                            <div class="layout-2-columns block-layout block-layout_reversed">
-                                <div class="specialties-us__description description">
-                                    <h2 class="section-header">Chocolate Pancakes</h2>
-                                    <div class="header-divider"></div>
-                                    <p class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Duis at velit maximus, molestie est a, tempor magna.</p>
-                                    <p class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus
-                                        mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
-                                        feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
-                                        tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
-                                </div>
-                                <div class="img-block section-img-block">
-                                    <div class="img-container img-container_right">
-                                        <img src="/src/assets/img/section-images/specialties.png" alt=""
-                                            class="section-img">
-                                        <div class="frame frame_left"></div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators specialties__carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                            class="active carousel-controls-panel__control"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"
+                            class="carousel-controls-panel__control"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"
+                            class="carousel-controls-panel__control"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-slide specialties__slide">
+                                <div class="layout-2-columns block-layout block-layout_reversed">
+                                    <div class="specialties-us__description description">
+                                        <h2 class="section-header">Chocolate Pancakes</h2>
+                                        <div class="header-divider"></div>
+                                        <p class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                                        <p class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus
+                                            mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
+                                            feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+                                            tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                                        </p>
+                                    </div>
+                                    <div class="img-block section-img-block">
+                                        <div class="img-container img-container_right">
+                                            <img src="/src/assets/img/section-images/specialties.png" alt=""
+                                                class="section-img">
+                                            <div class="frame"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-controls-container specialties__controls">
-                        <div class="carousel-controls specialties__controls-container">
-                            <div class="carousel-controls__control specialties-control"></div>
-                            <div class="carousel-controls__control specialties-control"></div>
-                            <div class="carousel-controls__control specialties-control"></div>
+                        <div class="carousel-item">
+                            <div class="carousel-slide specialties__slide">
+                                <div class="layout-2-columns block-layout block-layout_reversed">
+                                    <div class="specialties-us__description description">
+                                        <h2 class="section-header">Chocolate Pancakes</h2>
+                                        <div class="header-divider"></div>
+                                        <p class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                                        <p class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus
+                                            mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
+                                            feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+                                            tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                                        </p>
+                                    </div>
+                                    <div class="img-block section-img-block">
+                                        <div class="img-container img-container_right">
+                                            <img src="/src/assets/img/section-images/specialties.png" alt=""
+                                                class="section-img">
+                                            <div class="frame"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-slide specialties__slide">
+                                <div class="layout-2-columns block-layout block-layout_reversed">
+                                    <div class="specialties-us__description description">
+                                        <h2 class="section-header">Chocolate Pancakes</h2>
+                                        <div class="header-divider"></div>
+                                        <p class="section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                                        <p class="section-text">Integer ullamcorper neque eu purus euismod, ac faucibus
+                                            mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper
+                                            feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+                                            tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                                        </p>
+                                    </div>
+                                    <div class="img-block section-img-block">
+                                        <div class="img-container img-container_right">
+                                            <img src="/src/assets/img/section-images/specialties.png" alt=""
+                                                class="section-img">
+                                            <div class="frame"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -314,24 +367,20 @@
             <div class="wrapper gallery__wrapper">
                 <div class="layout-4-columns gallery-layout">
                     <div class="gallery__block">
-                        <img src="/src/assets/img/gallery-carousel/gallery-1.png" alt=""
-                            class="gallery__img">
+                        <img src="/src/assets/img/gallery-carousel/gallery-1.png" alt="" class="gallery__img">
                     </div>
                     <div class="gallery__block">
-                        <img src="/src/assets/img/gallery-carousel/gallery-2.png" alt=""
-                            class="gallery__img">
+                        <img src="/src/assets/img/gallery-carousel/gallery-2.png" alt="" class="gallery__img">
                     </div>
                     <div class="gallery__block">
-                        <img src="/src/assets/img/gallery-carousel/gallery-3.png" alt=""
-                            class="gallery__img">
+                        <img src="/src/assets/img/gallery-carousel/gallery-3.png" alt="" class="gallery__img">
                     </div>
                     <div class="gallery__block">
-                        <img src="/src/assets/img/gallery-carousel/gallery-4.png" alt=""
-                            class="gallery__img">
+                        <img src="/src/assets/img/gallery-carousel/gallery-4.png" alt="" class="gallery__img">
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
         </section>
         <section class="section contact" id="contact">
             <div class="wrapper">
@@ -343,14 +392,14 @@
                             velit maximus, molestie est a, tempor magna.</p>
                     </div>
                     <form action="post" class="contact-form form">
-                        <div class="row contacts-row">
+                        <div class="row-input contacts-row">
                             <div class="layout-3-columns contact-layout">
                                 <input type="text" class="input" name="Name" placeholder="Name" required>
                                 <input type="email" class="input" name="Email" placeholder="Email" required>
                                 <input type="tel" class="input" placeholder="Phone" required>
                             </div>
                         </div>
-                        <div class="row contacts-row">
+                        <div class="row-input contacts-row">
                             <textarea name="Message" class="input textarea-input" placeholder="Message"></textarea>
                         </div>
                         <div class="layout-2-columns under-contacts-layout">
@@ -375,7 +424,9 @@
             </div>
             <div class="contact__map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.4902804052804!2d-0.24356588478379015!3d51.595904679649784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876112b847e1733%3A0x5459509257c80ef1!2zQm91bGV2YXJkIERyLCBFZGd3YXJlLCBMb25kb24sINCS0LXQu9C40LrQvtCx0YDQuNGC0LDQvdC40Y8!5e0!3m2!1sru!2sby!4v1600711921976!5m2!1sru!2sby" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="google-map">
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.4902804052804!2d-0.24356588478379015!3d51.595904679649784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876112b847e1733%3A0x5459509257c80ef1!2zQm91bGV2YXJkIERyLCBFZGd3YXJlLCBMb25kb24sINCS0LXQu9C40LrQvtCx0YDQuNGC0LDQvdC40Y8!5e0!3m2!1sru!2sby!4v1600711921976!5m2!1sru!2sby"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+                    class="google-map">
                 </iframe>
             </div>
         </section>
@@ -384,5 +435,8 @@
         <p class="copyright">© Gleb Bayeshko 2020</p>
     </footer>
 </body>
+<script src="./src/vendors/jQuery/jQuery.js"></script>
+<script src="./src/vendors/Bootstrap/bootstrap.bundle.min.js"></script>
 <script src="./dist/main.js"></script>
+
 </html>

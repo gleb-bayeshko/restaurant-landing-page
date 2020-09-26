@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/gleb-bayeshko/restaurant-landing-page#readme",
   "dependencies": {
+    "bootstrap": "^4.5.2",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {

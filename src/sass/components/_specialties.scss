@@ -1,4 +1,5 @@
 .specialties {
+    position: relative;
     @include bg-img($url: '../assets/img/backgrounds/specialties-bg.png');
 
     &__controls {

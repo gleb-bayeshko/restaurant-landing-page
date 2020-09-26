@@ -93,12 +93,13 @@ nav {
     display: inline-block;
     position: absolute;
     top: 0;
-    left: calc(50% - 75px);
+    left: 50%;
+    transform: translateX(-50%);
     margin: 10px 0 0;
     @include media-tablet {
-        top: 3px;
-        left: calc(50% - 15px);
         margin: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .logo-svg {
