@@ -4,4 +4,16 @@
     & > * {
         flex-basis: calc(100% / 3 - 10px);
     }
+
+    @include media-tablet {
+        & > * {
+            flex-basis: calc(100% / 2 - 30px);
+        }
+    }
+
+    @include media-tablet-small {
+        & > * {
+            flex-basis: 100%;
+        }
+    }
 }

@@ -14,7 +14,7 @@ export class BurgerMenu {
 
             this._toggleNavListActiveClass();
             this._toggleOverlayActiveClass();
-
+            
             this.classesAreActive = !this.classesAreActive;
             this._addListenersToRemoveActiveClassesOnAnyClick();
         })

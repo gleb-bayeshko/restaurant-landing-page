@@ -33,9 +33,15 @@
 
 .menu__table {
     margin: 50px 0 0;
+    flex-wrap: wrap;
+
+    & > * {
+        flex-basis: calc(100% / 3 - 30px);
+    }
 }
 
 .cell {
+    margin-bottom: 20px;
     & > * {
         justify-content: flex-start;
         align-items: flex-start;
@@ -44,7 +50,7 @@
     &__name {
         position: relative;
         overflow: hidden;
-        flex-basis: 70%;
+        flex-basis: 60%;
     }
 
     &__title,
@@ -58,7 +64,7 @@
 
     &__price {
         text-align: end;
-        flex-basis: 30%;
+        flex-basis: 40%;
         color: $color-add;
     }
 }
