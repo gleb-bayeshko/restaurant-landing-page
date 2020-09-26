@@ -10,7 +10,6 @@
 
 .svg-container {
     @include flex ($align: center, $justify: center);
-    margin-bottom: 20px;
     @extend %border-ico;
     @extend %transition;
 

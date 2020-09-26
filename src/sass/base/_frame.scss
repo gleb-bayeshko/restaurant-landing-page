@@ -10,7 +10,7 @@
     right: -12%;
     z-index: 20;
 
-    @include media-tablet-small {
+    @include media-tablet {
         border-width: 10px;
     }
 }

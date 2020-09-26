@@ -19,4 +19,8 @@
     &:hover {
         background-color: $color-button-colored-hovered;
     }
+
+    &:active {
+        outline: none;
+    }
 }

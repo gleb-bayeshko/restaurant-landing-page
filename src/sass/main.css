@@ -487,7 +487,7 @@ button {
   right: -12%;
   z-index: 20;
 }
-@media (max-width: 650px) {
+@media (max-width: 900px) {
   .frame {
     border-width: 10px;
   }
@@ -617,6 +617,9 @@ button {
 .button_colored:hover {
   background-color: #efff0e;
 }
+.button_colored:active {
+  outline: none;
+}
 
 .socials {
   display: flex;
@@ -633,7 +636,6 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 20px;
 }
 .svg-container_instagram {
   position: relative;
@@ -986,26 +988,25 @@ nav {
 .intro__hours {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: flex-star;
   flex-direction: row;
-  flex-basis: 5%;
+  flex-basis: 10%;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
 }
+@media (max-width: 900px) {
+  .intro__hours {
+    align-items: center;
+    align-self: center;
+  }
+}
 .intro__hours p {
-  display: flex;
-  align-items: flex-end;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   flex-direction: row;
   font-weight: bold;
   font-size: 1.2rem;
-}
-@media (max-width: 900px) {
-  .intro__hours {
-    padding-left: 45px;
-  }
 }
 @media (max-width: 650px) {
   .intro__hours {
@@ -1025,17 +1026,6 @@ nav {
   .intro__arrow-button {
     margin: 30px 0 0;
   }
-}
-
-.header__main-title {
-  flex-basis: 85%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-}
-.header__main-title .main-title__main-header {
-  margin: 10px 0 0;
 }
 
 .main-title__buttons {
@@ -1075,10 +1065,14 @@ nav {
     font-size: 5.6rem;
   }
 }
-
 .header__socials {
-  flex-basis: 5%;
+  flex-basis: 10%;
   flex-direction: column;
+}
+@media (max-width: 900px) {
+  .header__socials {
+    align-self: center;
+  }
 }
 @media (max-width: 650px) {
   .header__socials {
@@ -1090,15 +1084,38 @@ nav {
     width: 100%;
   }
 }
-
+.header__socials-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+}
+@media (max-width: 900px) {
+  .header__socials-list {
+    align-items: center;
+  }
+}
 @media (max-width: 650px) {
-  .socials-list {
+  .header__socials-list {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
     flex-basis: 220px;
   }
+}
+.header__socials-list .social-ico-ref {
+  margin: 0 0 20px;
+}
+.header__main-title {
+  flex-basis: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.header__main-title .main-title__main-header {
+  margin: 10px 0 0;
 }
 
 .our-team {
