@@ -55,13 +55,13 @@
 }
 
 .contact-layout {
-    @include media-mobile {
+    @include media-tablet-small {
         flex-direction: column;
         margin-bottom: 0;
     }
 
     > * {
-        @include media-mobile {
+        @include media-tablet {
             margin-bottom: 10px;
         }
     }

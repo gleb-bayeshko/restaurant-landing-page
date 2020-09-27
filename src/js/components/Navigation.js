@@ -11,7 +11,6 @@ export class Navigation {
     }
 
     addScrollOnArrowButtonClick() {
-        console.log(this.arrowButton)
         this.arrowButton.addEventListener('click', () => this._scrollOnArrowButtonClick());
     }
 

@@ -31,6 +31,11 @@
     }
 }
 
+.menu__nav .menu__link_active {
+    background-color: $color-primary;
+    color: $color-light;
+}
+
 .menu__table {
     margin: 50px 0 0;
     flex-wrap: wrap;
@@ -49,6 +54,11 @@
         & > * {
             flex-basis: 100%;
         }
+    }
+
+    &:after {
+        content: '';
+        width: calc(100% / 3 - 30px);
     }
 }
 
