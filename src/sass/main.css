@@ -51,6 +51,92 @@
   list-style: none;
 }
 
+.layout-2-columns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.layout-2-columns > * {
+  flex-basis: 42%;
+}
+.layout-2-columns .section-img-block {
+  flex-basis: 50%;
+}
+
+.block-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.block-layout > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.block-layout_reversed {
+  flex-direction: row-reverse;
+}
+@media (max-width: 650px) {
+  .block-layout {
+    flex-direction: column;
+  }
+}
+
+.layout-3-columns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.layout-3-columns > * {
+  flex-basis: calc(100% / 3 - 10px);
+}
+@media (max-width: 900px) {
+  .layout-3-columns > * {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+@media (max-width: 650px) {
+  .layout-3-columns > * {
+    flex-basis: 100%;
+  }
+}
+
+.layout-4-columns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.layout-4-columns > * {
+  flex-basis: 25%;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.section-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -770,92 +856,6 @@ button {
   position: static;
 }
 
-.layout-2-columns {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row;
-}
-.layout-2-columns > * {
-  flex-basis: 42%;
-}
-.layout-2-columns .section-img-block {
-  flex-basis: 50%;
-}
-
-.block-layout {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-.block-layout > * {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.block-layout_reversed {
-  flex-direction: row-reverse;
-}
-@media (max-width: 650px) {
-  .block-layout {
-    flex-direction: column;
-  }
-}
-
-.layout-3-columns {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row;
-}
-.layout-3-columns > * {
-  flex-basis: calc(100% / 3 - 10px);
-}
-@media (max-width: 900px) {
-  .layout-3-columns > * {
-    flex-basis: calc(100% / 2 - 30px);
-  }
-}
-@media (max-width: 650px) {
-  .layout-3-columns > * {
-    flex-basis: 100%;
-  }
-}
-
-.layout-4-columns {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row;
-}
-.layout-4-columns > * {
-  flex-basis: 25%;
-}
-
-section {
-  padding: 50px 0;
-}
-
-.section-layout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 50px 0;
-}
-
-.description {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-}
-
 nav {
   position: absolute;
   width: 100%;
@@ -1217,6 +1217,16 @@ nav {
 }
 .menu__table > * {
   flex-basis: calc(100% / 3 - 30px);
+}
+@media (max-width: 900px) {
+  .menu__table > * {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+@media (max-width: 650px) {
+  .menu__table > * {
+    flex-basis: 100%;
+  }
 }
 
 .cell {

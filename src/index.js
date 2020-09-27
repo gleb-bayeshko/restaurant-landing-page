@@ -1,6 +1,5 @@
 import { BurgerMenu } from './js/BurgerMenu';
 import { Navigation } from './js/Navigation';
-import css from './sass/main.css';
 
 const burgerButton = document.querySelector('.burger-menu');
 const navList = document.querySelector('.navbar__list');

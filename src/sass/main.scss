@@ -3,6 +3,12 @@
 @import "abstracts/mixins";
 @import "abstracts/placeholders";
 
+@import "layouts/2-columns";
+@import "layouts/3-columns";
+@import "layouts/4-columns";
+@import "layouts/section-layout";
+@import "layouts/section-alter-layout";
+
 @import "base/normalize";
 @import "base/typography";
 @import "base/divider";
@@ -23,12 +29,6 @@
 @import "base/subtitle";
 @import "base/overlay";
 @import "base/carousel";
-
-@import "layouts/2-columns";
-@import "layouts/3-columns";
-@import "layouts/4-columns";
-@import "layouts/section-layout";
-@import "layouts/section-alter-layout";
 
 @import "components/navbar";
 @import "components/intro";

@@ -1,71 +1,84 @@
+const webpack = require('webpack');
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const TerserJSPlugin = require('terser-webpack-plugin');
 
-module.exports = {
-  entry: { main: './src/index.js' },
-  output: {
-    path: path.resolve(__dirname, 'build/scripts'),
-    filename: 'main.js'
-  },
-  optimization: {
-    minimizer: [new TerserJSPlugin({}), new OptimizeCssAssetsPlugin({})],
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
-      {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
-      },
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
+module.exports = (env, options) => {
+  const isProduction = options.mode === 'production';
+
+  const config = {
+    mode: isProduction ? 'production' : 'development',
+    devtool: isProduction ? 'none' : 'source-map',
+    watch: !isProduction,
+    entry: ['./src/index.js', './src/sass/main.scss'],
+    output: {
+      path: path.join(__dirname, './build'),
+      filename: 'script.js'
+    },
+
+    module: {
+      rules: [
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
             options: {
-              outputPath: '../images',
-            },
+              presets: ['@babel/preset-env']
+            }
+          }
+        },
+        {
+          test: /\.scss$/,
+          use: [
+            MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'
+          ]
+        },
+        {
+          test: /\.(png|jpe?g|gif)$/i,
+          loader: 'file-loader',
+          options: {
+            outputPath: 'assets/images',
           },
-        ],
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        loader: 'file-loader',
-        options: {
-          outputPath: '../fonts',
-        }
-      },
-      {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: 'svg-url-loader',
-            options: {
-              limit: 10000,
-              outputPath: '../svg',
-            },
+        },
+        {
+          test: /\.svg$/i,
+          loader: 'file-loader',
+          options: {
+            outputPath: 'assets/svg',
           },
-        ],
-      },
+        },
+        {
+          test: /\.woff$/i,
+          loader: 'file-loader',
+          options: {
+            outputPath: 'assets/fonts',
+          },
+        },
+        {
+          test: /\.html$/,
+          loader: 'html-loader',
+          options: {
+            attributes: {
+              root: '.',
+            },
+          }
+        },
+      ]
+    },
+
+    plugins: [
+      new CleanWebpackPlugin(),
+      new HtmlWebpackPlugin({
+        template: 'index.html',
+      }),
+      new MiniCssExtractPlugin({
+        filename: 'style.css',
+      })
     ]
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '../styles/bundle.css'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Restaurant Landing Page',
-      template: 'index.html',
-      filename: '../index.html'
-    })
-  ]
+  }
+
+  return config;
 }
+
