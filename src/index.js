@@ -1,6 +1,7 @@
 import { BurgerMenu } from './js/components/BurgerMenu';
 import { Navigation } from './js/components/Navigation';
 import { MenuList } from './js/components/MenuList';
+import { BootstrapCarousel } from './js/components/BootstrapCarousel';
 import { menuData } from './js/menuData';
 
 const burgerButton = document.querySelector('.burger-menu');
@@ -19,10 +20,14 @@ const navigation = new Navigation(navLinks, arrowButton);
 navigation.addScrollOnNavClick();
 navigation.addScrollOnArrowButtonClick();
 
-const menuList = new MenuList(menuData, 'menu__nav', 'menu__table', 'cell', 'layout-2-columns', 'cell__name', 'cell__title', 'cell__subtitle', 'cell__price', 'menu__link_active');
-menuList.addMenuNavListener();
+const menuList = new MenuList('menu__nav', 'menu__table', 'cell', 'layout-2-columns', 'cell__name', 'cell__title', 'cell__subtitle', 'cell__price', 'menu__link_active');
+menuList.addMenuNavListener(menuData);
 
-// $('.carousel').carousel({
-//     interval: 2000,
-//     ride: 'carousel'
-//   })
+const bootstrapCarousel = new BootstrapCarousel('carouselSpecialties');
+bootstrapCarousel.addInitialActiveClassToSlide(0);
+bootstrapCarousel.renderCarouselIndicators();
+
+$('.carousel').carousel({
+    interval: 2000,
+    ride: 'carousel'
+  })

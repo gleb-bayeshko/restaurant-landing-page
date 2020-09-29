@@ -10,7 +10,6 @@ module.exports = (env, options) => {
   const config = {
     mode: isProduction ? 'production' : 'development',
     devtool: isProduction ? 'none' : 'source-map',
-    watch: !isProduction,
     entry: ['./src/index.js', './src/sass/main.scss'],
     output: {
       path: path.join(__dirname, './build'),

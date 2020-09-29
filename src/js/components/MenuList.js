@@ -1,6 +1,5 @@
 export class MenuList {
-    constructor(data, menuNavClass, tableClass, cellClass, cellLayoutClass, cellNameClass, cellTitleClass, cellSubtitleClass, cellPriceClass, navLinkActiveClass, ...restClasses) {
-        this.data = data;
+    constructor(menuNavClass, tableClass, cellClass, cellLayoutClass, cellNameClass, cellTitleClass, cellSubtitleClass, cellPriceClass, navLinkActiveClass, ...restClasses) {
         this.menuNavClass = menuNavClass;
         this.tableClass = tableClass;
         this.cellClass = cellClass;
@@ -13,7 +12,9 @@ export class MenuList {
         this.rest = restClasses;
     }
 
-    addMenuNavListener() {
+    addMenuNavListener(data) {
+        this.data = data;
+
         let menuNav = document.querySelector(`.${this.menuNavClass}`);
         menuNav.addEventListener('click', (e) => {
             this._selectActiveNavLink(e.target)
