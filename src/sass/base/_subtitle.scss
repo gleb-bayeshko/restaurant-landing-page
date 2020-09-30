@@ -1,7 +1,0 @@
-.subtitle-container {
-    @include flex($justify: center, $align: center, $direction: row);
-    margin-bottom: 15px;
-    & .subtitle {
-        color: $color-light;
-    }
-}
