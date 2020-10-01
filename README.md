@@ -15,7 +15,7 @@
   * folders and files architecture,
   * final main.scss file with imports of all other files,
   * animations (logo, burger button, navigation menu at low screen resolution);
-* BEM;
+* **BEM**;
 * **JavaScript** *(ECMAScript 6/7/8)*:
   * modules (import/export of components),
   * classes,
