@@ -1,5 +1,5 @@
 export class MenuList {
-    constructor(menuNavClass, tableClass, cellClass, cellLayoutClass, cellNameClass, cellTitleClass, cellSubtitleClass, cellPriceClass, navLinkActiveClass, ...restClasses) {
+    constructor({menuNavClass, tableClass, cellClass, cellLayoutClass, cellNameClass, cellTitleClass, cellSubtitleClass, cellPriceClass, navLinkActiveClass}, ...restClasses) {
         this.menuNavClass = menuNavClass;
         this.tableClass = tableClass;
         this.cellClass = cellClass;
@@ -17,7 +17,9 @@ export class MenuList {
 
         let menuNav = document.querySelector(`.${this.menuNavClass}`);
         menuNav.addEventListener('click', (e) => {
-            this._selectActiveNavLink(e.target)
+            if (!e.target.classList.contains('menu__link')) return;
+
+            this._selectActiveNavLink(e.target);
             this._renderCurrentMenu(e.target.textContent);
         })
 

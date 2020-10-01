@@ -31,6 +31,10 @@
     }
 }
 
+.menu__link {
+    user-select: none;
+}
+
 .menu__nav .menu__link_active {
     background-color: $color-primary;
     color: $color-light;

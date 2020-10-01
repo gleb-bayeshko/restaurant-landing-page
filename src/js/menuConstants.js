@@ -304,3 +304,15 @@ export const menuData = {
       },
     ]
   }
+
+export const menuClasses = {
+  menuNavClass: 'menu__nav',
+  tableClass: 'menu__table',
+  cellClass: 'cell',
+  cellLayoutClass: 'layout-2-columns',
+  cellNameClass: 'cell__name',
+  cellTitleClass: 'cell__title',
+  cellSubtitleClass: 'cell__subtitle',
+  cellPriceClass: 'cell__price',
+  navLinkActiveClass: 'menu__link_active',
+}
