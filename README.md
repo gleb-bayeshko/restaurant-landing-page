@@ -66,4 +66,4 @@
   - Images:
     - all images are responsive;
   - Fonts:
-    - changing font-size depending on current screen resolution.
+    - changing of font-size depending on current screen resolution.
