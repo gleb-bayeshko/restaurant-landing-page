@@ -39,7 +39,7 @@
   - smooth scrolling to the first section on the arrow button click,
   - listener is on the navigation block - determination of a clicked link occurs by event delegation;
   - event target check;
-- Inputs;
+- Inputs:
   ![Inputs](https://lh3.googleusercontent.com/NYSCx7BEtX86WzJrCzuZ-UqOMvfXAmXP9WK0LWQHchkFJaOoHsHPXKh83VPB_6W1IOrq610JBtG3Ev4QXlWq25HRatM_pZnq1H18t2RX49BZOt7WqNuMmS0jtxCB9rFSUEgvdRo02ximae7xdFo3DhnF4p0gURyZYkutPU5H196vfKJKM5nSBcYc14u_lW43AAlRBqLVxJsq0ssmb02GLxxbRQ4hD-IFVPV-R7L1Nv9fUYSOM1CylL0y08d5f23oNCLoAvY0j5LT89WMhyyRASBKbCE9GyoUeiIsWdx5-yAg7nLpPU7JOPKy-7TRmyLC66mvOfSWv_wtGfFCHQTMy5X3w6ms0e6he_1FSER-dHHuqYVeFktvS3ynaozkQhNyTWXQ4FNeR-uJf_tR3Xp7hespi81g738ACjkJ8iJin6BRzGVd6rBKwMmwSM3wDSV-11niGTZbTOfNtFve4txMLgxpdIJNnDXCM4TpiQFvdYwpVL2FXOO4Wr5HTxG77fubxhR1DpZHHbRtQKwJYDmOb_XEtj_0F7TUUrAZ34ETLm6qtrZF5LibwmS_q5wxKAObI1c5kECjmeY7ac3738PoLE9yGkUo3fO12SJ6Ka3XWOsTG5TJDdrxLNsYecLoCcSPoy5ViVVLIZk8dFZvcXV4Op0U9yImGGXpypDiT6zTR6ejHsnT60c1CCdJM2S4Xw=w1337-h617-no?authuser=0)
   - text,
   - email,
