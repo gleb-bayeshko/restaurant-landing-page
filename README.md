@@ -1,7 +1,7 @@
 # Restaurant landing page #
 ![Restaurant landing page](public/preview.png)
 
-[![Demo-button](public/demo-button.png)](https://gleb-bayeshko.github.io/restaurant-landing-page/)
+[![Demo-button](public/demo-button.png)](https://gleb-bayeshko.github.io/restaurant-landing-page-HTML-SCSS/)
 
 ## Technology stack ##
 * **HTML**
